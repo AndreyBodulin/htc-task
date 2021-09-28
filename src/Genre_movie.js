@@ -12,7 +12,7 @@ function Genre(props){
 function Genre_movie(props){
     return(
         <div>
-            <span className='genre_title'>Жанры</span>
+            <span className='genre_title container'>Жанры</span>
             <div className='block_genre container'>
                 <Genre genre='comedy' text='Комедии' img='Comedy'/>
                 <Genre genre='drama' text='Драмы' img='drama'/>

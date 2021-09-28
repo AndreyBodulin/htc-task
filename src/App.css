@@ -66,8 +66,8 @@ body{
   position: relative;
   width: 310px;
   height: 40px;
-  top: 50px;
-  left: 798px;
+  top: 49px;
+  left: 797px;
 }
 .tabs_movies{
   font-family: Rubik;
@@ -77,6 +77,7 @@ body{
   line-height: 33px;
   letter-spacing: 0em;
   text-align: right;
+  text-decoration: none;
 }
 .tabs_movies_active{
   border-bottom: 2px solid red;
@@ -87,6 +88,7 @@ body{
   font-size: 28px;
   text-align: right;
   padding-bottom: 6px;
+  text-decoration: none;
 }
 .tabs_channels{
   font-family: Rubik;
@@ -96,6 +98,7 @@ body{
   line-height: 33px;
   letter-spacing: 0em;
   text-align: right;
+  text-decoration: none;
 }
 .tabs_channels_active{
   color: red;
@@ -107,6 +110,7 @@ body{
   line-height: 33px;
   letter-spacing: 0em;
   text-align: right;
+  text-decoration: none;
 }
 .block_news{
   position: relative;
@@ -151,8 +155,7 @@ body{
 }
 .genre_title{
   position: relative;
-  top: 112px;
-  left: 362px;
+  top: 113px;
   display: inline;
   font-family: Rubik;
   font-size: 24px;

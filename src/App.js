@@ -4,30 +4,50 @@ import Header from "./Header.js";
 import Footer from './Footer.js';
 import Movie_news from './Movie_news.js';
 import Genre_movie from './Genre_movie';
-// import {
-//   BrowserRouter as Router,
-//   Switch,
-//   Route,
-//   Link
-// } from "react-router-dom";
+ import {
+   BrowserRouter as Router,
+   Switch,
+   Route,
+   Link,
+   Redirect
+ } from "react-router-dom";
 
-function Tabs(props){
-  return(
-    <div class="tabs">
-        <span className="tabs_movies_active">Фильмы</span>
-        <span className="tabs_channels">Телеканалы</span>
-    </div>
-  )
+function changeTabsMovie(){
+  document.addEventListener('click',event => {
+    if (event.target.className == 'tabs_movies'){
+      document.getElementsByClassName('tabs_channels_active')[0].className = 'tabs_channels';
+      event.target.className = "tabs_movies_active";
+    }
+  })
 }
 
+function changeTabsChannel(){
+  document.addEventListener('click',event => {
+    if (event.target.className == 'tabs_channels'){
+      document.getElementsByClassName('tabs_movies_active')[0].className = 'tabs_movies';
+      event.target.className = "tabs_channels_active";
+    }
+  })
+}
 
 function App() {
   return (
     <div>
       <Header />
-      <Tabs />
-      <Movie_news />
-      <Genre_movie />
+      <Router>
+        <div class="tabs container">
+          <Link onClick={changeTabsMovie} className="tabs_movies_active" to='/'>Фильмы</Link>
+          <Link onClick={changeTabsChannel} className="tabs_channels" to='/channels'>Телеканалы</Link>
+        </div>
+        <Switch>
+            <Route exact path='/'>
+              <Movie_news />
+              <Genre_movie />
+            </Route>
+            <Route path='/channels'>
+            </Route>
+        </Switch>
+      </Router>
       <Footer />
     </div>
   );
