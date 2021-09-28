@@ -1,38 +1,296 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  outline: none;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  margin-top: 32px;
+  width: 1180px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container{
+  position: relative;
+  left: 362px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top:5px;
+}
+.search{
+  display: flex;
+  position: relative;
+  align-items: center;
+  left: -31px;
+}
+.search_input{
+  position: relative;
+  width: 320px;
+  height: 25px;
+  left: -20px;
+  border: none;
+  border-bottom: 1px solid black;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #828282;
+  box-sizing: border-box;
+}
+.search_btn{
+  position: relative;
+  left: 6px;
+  width: 50px;
+  background-color: white;
+  color: #E5261E;
+  border: none;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+}
+.login_btn{
+  width: 113px;
+  height: 40px;
+  color: white;
+  background: #E5261E;
+  border: none;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.tabs{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 310px;
+  height: 40px;
+  top: 50px;
+  left: 798px;
+}
+.tabs_movies{
+  font-family: Rubik;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: right;
+}
+.tabs_movies_active{
+  border-bottom: 2px solid red;
+  color: red;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  text-align: right;
+  padding-bottom: 6px;
+}
+.tabs_channels{
+  font-family: Rubik;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: right;
+}
+.tabs_channels_active{
+  color: red;
+  border-bottom: 2px solid red;
+  font-family: Rubik;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: right;
+}
+.block_news{
+  position: relative;
+  top: 82px;
+  width: 1180px;
+  height: 480px;
+}
+.news_movies{
+  position: relative;
+  top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.content_movie{
+  width: 280px;
+}
+.news_movies span{
+  position: relative;
+  left: 0px;
+  top: 17px;
+  font-family: Rubik;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.movie_picture{
+  display: block;
+  width: 280px;
+  height:370px;
+  border-radius: 10px;
+}
+.block_genre{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top:115px;
+  width: 1180px;
+  height: 250px;
+}
+.genre_title{
+  position: relative;
+  top: 112px;
+  left: 362px;
+  display: inline;
+  font-family: Rubik;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: right;
+}
+.comedy{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  position: relative;
+  width: 280px;
+  height: 208px;
+  background: linear-gradient(127.83deg, #F2C94C 8.44%, #F29A4A 91.36%);
+  top: 15px;
+  border-radius: 2%;
+  box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.15);
+  opacity: 0.8;
+}
+.comedy:hover{
+  opacity: 1;
+}
+.drama{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 280px;
+  height: 208px;
+  background: linear-gradient(127.83deg, #F2994A 8.44%, #EB5757 91.36%);
+  top: 15px;
+  border-radius: 2%;
+  box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.15);
+  opacity: 0.8;
+}
+.drama:hover{
+  opacity: 1;
+}
+.fantastic{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 280px;
+  height: 208px;
+  background: linear-gradient(127.83deg, #56CCF2 8.44%, #2F80ED 91.36%);
+  top: 15px;
+  border-radius: 2%;
+  box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.15);
+  opacity: 0.8;
+}
+.fantastic:hover{
+  opacity: 1;
+}
+.horror{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 280px;
+  height: 208px;
+  background: linear-gradient(127.83deg, #828282 8.44%, #333333 91.36%);
+  top: 15px;
+  border-radius: 2%;
+  box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.15);
+  opacity: 0.8;
+}
+.horror:hover{
+  opacity: 1;
+}
+.genre_span{
+  position: relative;
+  top: 110px;
+  font-family: Rubik;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.genre_img{
+  position: relative;
+  top: 80px;
+  width: 50px;
+  height: 50px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer{
+  position: relative;
+  width: 1440px;
+  height: 120px;
+  background-color: #F2F2F2;
+  left: 232px;
+  top: 160px;
+}
+.footer_logo{
+  position: relative;
+  top: 27px;
+  left: 130px;
+}
+.footer_location{
+  display: block;
+  position: relative;
+  top: -47px;
+  left: 202px;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #333333;
+}
+.footer_number{
+  display: block;
+  position: relative;
+  top: -47px;
+  left: 202px;
+  margin-top: 6px;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #333333;
+}
+.footer_link{
+  position: relative;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #1F4766;
+  text-decoration: none;
+  top: -39px;
+  left: 203px;
 }
