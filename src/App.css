@@ -4,7 +4,6 @@
 }
 body{
   margin-top: 32px;
-  width: 1180px;
 }
 .container{
   position: relative;
@@ -15,6 +14,9 @@ body{
   justify-content: space-between;
   position: relative;
   top:5px;
+  width: 1180px;
+  height: 36px;
+  margin-bottom: 53px;
 }
 .search{
   display: flex;
@@ -66,7 +68,6 @@ body{
   position: relative;
   width: 310px;
   height: 40px;
-  top: 49px;
   left: 797px;
 }
 .tabs_movies{
@@ -114,9 +115,10 @@ body{
 }
 .block_news{
   position: relative;
-  top: 82px;
   width: 1180px;
   height: 480px;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 .news_movies{
   position: relative;
@@ -146,16 +148,19 @@ body{
   border-radius: 10px;
 }
 .block_genre{
+  height: 252px;
+  width: 1180px;
+  margin-bottom: 72px;
+}
+.block_genre_item{
   display: flex;
   justify-content: space-between;
   position: relative;
-  top:115px;
   width: 1180px;
   height: 250px;
 }
 .genre_title{
   position: relative;
-  top: 113px;
   display: inline;
   font-family: Rubik;
   font-size: 24px;
@@ -253,7 +258,7 @@ body{
   height: 120px;
   background-color: #F2F2F2;
   left: 232px;
-  top: 160px;
+  margin-top: 72px;
 }
 .footer_logo{
   position: relative;
@@ -296,4 +301,61 @@ body{
   text-decoration: none;
   top: -39px;
   left: 203px;
+}
+.channels{
+  position: relative;
+  margin-top: 27px;
+}
+.channel_item{
+  position: relative;
+  width: 1180px;
+  height: 162px;
+  background: #F2F2F2;
+  margin-top: 12px;
+}
+.channel_logo{
+  position: relative;
+  top: 50px;
+  left: 175px;
+}
+.channel_name{
+  position: absolute;
+  top:21px;
+  left:400px;
+  font-family: Rubik;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.timetable{
+  position: absolute;
+  left: 400px;
+  top:62px;
+  display: flex;
+  flex-direction: column;
+}
+.timetable_item_active{
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 12px;
+  color:#E5261E;
+}
+.timetable_item{
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color:#333333;
+  margin-bottom: 12px;
 }

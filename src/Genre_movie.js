@@ -11,9 +11,9 @@ function Genre(props){
 };
 function Genre_movie(props){
     return(
-        <div>
-            <span className='genre_title container'>Жанры</span>
-            <div className='block_genre container'>
+        <div className='block_genre container'>
+            <span className='genre_title'>Жанры</span>
+            <div className='block_genre_item'>
                 <Genre genre='comedy' text='Комедии' img='Comedy'/>
                 <Genre genre='drama' text='Драмы' img='drama'/>
                 <Genre genre='fantastic' text='Фантастика' img='alien'/>

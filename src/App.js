@@ -4,12 +4,12 @@ import Header from "./Header.js";
 import Footer from './Footer.js';
 import Movie_news from './Movie_news.js';
 import Genre_movie from './Genre_movie';
+import Channels from './Channel';
  import {
    BrowserRouter as Router,
    Switch,
    Route,
-   Link,
-   Redirect
+   Link
  } from "react-router-dom";
 
 function changeTabsMovie(){
@@ -45,6 +45,7 @@ function App() {
               <Genre_movie />
             </Route>
             <Route path='/channels'>
+              <Channels />
             </Route>
         </Switch>
       </Router>
